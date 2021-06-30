@@ -8,6 +8,9 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>CHS Engenharia</title>
 
+   <!-- ICONS -->
+   <link rel="stylesheet" href="assets/fonts/style.css">
+
    <!-- STYLES -->
    <link rel="stylesheet" href="styles.css">
 
@@ -23,7 +26,7 @@
 <body>
 
    <header id="header">
-      <nav class="container show">
+      <nav class="container">
          <a class="logo" href="#">csh<span>engenharia</span>.</a>
          <!-- menu -->
          <div class="menu">
@@ -37,8 +40,8 @@
             </ul>
          </div>
          <!-- /menu -->
-         <div class="open">...</div>
-         <div class="close">x</div>
+         <div class="toggle icon-menu"></div>
+         <div class="toggle icon-close"></div>
       </nav>
    </header>
 
@@ -62,15 +65,51 @@
       <div class="divider-1"></div>
 
       <section class="section" id="about">
-         <div class="container grid">Sobre</div>
+         <div class="container grid">
+            <div class="image">
+               <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y29uc3RydWN0aW9ufGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Construção">
+            </div>
+            <div class="text">
+               <h2 class="title">Sobre nós</h2>
+               <p>A CHS Engenharia foi fundada em 2021 na cidade de São Luís pelo engenheiro civil Indalécio de Almeida Vale. Focamos na experiência e nas atuais técnicas de engenharia com o objetivo de garantir a qualidade e a confiabilidade na execução de obras e empreendimentos de seus clientes. Com essa base sólida, a CSH Engenharia oferece para toda a cidade e região serviços em obras residenciais e de infraestruturas de pequeno porte.</p>
+               <p></p>
+               <p></p>
+            </div>
+         </div>
       </section>
 
+      <div class="divider-2"></div>
+
       <section class="section" id="services">
-         <div class="container grid">Serviços</div>
+         <div class="container grid">
+            <header>
+               <h2 class="title">Serviços</h2>
+               <p>
+                  Os serviços da <strong>CHS Engenharia</strong> incluem os seguintes:
+               </p>
+            </header>
+            <div class="cards grid">
+               <div class="card">
+                  <i class="icon-excavator"></i>
+                  <h3 class="title">Construção</h3>
+                  <p>Descrição do serviço</p>
+               </div>
+               <div class="card">
+                  <i class="icon-theodolite"></i>
+                  <h3 class="title">Planejamentos de obras</h3>
+                  <p>Descrição do serviço</p>
+               </div>
+               <div class="card">
+                  <i class="icon-machine"></i>
+                  <h3 class="title">Orçamentos</h3>
+                  <p>Descrição do serviço</p>
+               </div>
+            </div>
+         </div>
       </section>
 
    </main>
-
+   <script src="main.js"></script>
 </body>
 
 </html>
