@@ -32,12 +32,19 @@ window.addEventListener('scroll', function() {
 
 /* Testimonials carousel slider swiper */
 const swiper = new Swiper('.swiper-container', {
-   slidesPerView: 1,
-   pagination: {
-      el: '.swiper-pagination'
+   spaceBetween: 30,
+   centeredSlides: true,
+   autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
    },
-   mousewheel: true,
-   keyboard: true
+   spaceBetween: 1,
+   pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+   },
+   mousewheel: false,
+   keyboard: true,
  });
 
 /* ScrollReveal */
