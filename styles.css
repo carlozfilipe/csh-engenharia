@@ -33,6 +33,7 @@ img {
    --text-color: hsl(0 0% 46%);
    --text-color-light: hsl(0 0% 98%);
    --body-color: hsl(0 0% 98%);
+   --cf-color: hsl(321, 100%, 50%);
 }
 
 /* ============= BASE =========== */
@@ -157,6 +158,10 @@ main {
 
 .logo span {
    color: var(--base-color);
+}
+
+.logo-alt span {
+   color: var(--body-color);
 }
 
 /* ======== NAVIGATION ====== */
@@ -466,3 +471,81 @@ nav.show div.icon-close {
 #contact ul li i {
    color: var(--base-color);
 }
+
+/*========== FOOTER ===========*/
+footer {
+   background: var(--base-color);
+}
+
+footer .logo {
+   display: inline-block;
+   margin-bottom: 1.5rem;
+}
+
+footer .brand p {
+   color: var(--text-color-light);
+   margin-bottom: 1.5rem;
+}
+
+footer i {
+   font-size: 1.5rem;
+   color: var(--text-color-light);
+}
+
+footer .social a {
+   margin-right: 2rem;
+}
+
+footer .heart {
+   height: 1rem;
+   width: 1rem;
+}
+
+a .up-arrow {
+   height: 1rem;
+   width: 1rem;
+}
+
+
+/* CF */
+
+/* footer .cf {
+   background:
+      linear-gradient(
+        to bottom, var(--cf-color) 0%,
+        var(--cf-color) 100%
+      );
+   background-position: 0 100%;
+   background-repeat: repeat-x;
+   background-size: 0.9px 0.9px;
+   color: #000;
+   text-decoration: none;
+   transition: background-size .2s;
+   font-weight: bold;
+ }
+ 
+ footer .cf:hover {
+   background-size: 4px 50px;
+ } */
+
+ footer .cf {
+   background:
+      linear-gradient(
+        to bottom, var(--cf-color) 0%,
+        var(--cf-color) 100%
+      );
+   background-position: 0 100%;
+   background-repeat: repeat-x;
+   background-size: 4px 4px;
+   color: #000;
+   text-decoration: none;
+ }
+ 
+ footer .cf:hover {
+   background: none;
+   color: red;
+   font-family: 'DM Sans', serif;
+   font-size: 1.2em;
+   letter-spacing: 3px;
+   line-height: .75em;
+ }
