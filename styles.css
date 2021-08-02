@@ -38,6 +38,10 @@ img {
    /* fonts */
    --title-font-size: 1.875rem;
    --subtitle-font-size: 1rem;
+
+   --title-font: 'Poppins', sans-serif;
+   --body-font: 'DM Sans', sans-serif;
+
 }
 
 /* ============= BASE =========== */
@@ -47,14 +51,14 @@ html {
 }
 
 body {
-   font: 400 1rem 'DM Sans', sans-serif;
+   font: 400 1rem var(--body-font);
    color: var(--text-color);
    background: var(--body-color);
    -webkit-font-smoothing: antialiased;
 }
 
 .title {
-   font: 700 var(--title-font-size) 'Poppins', sans-serif; 
+   font: 700 var(--title-font-size) var(--title-font); 
    color: var(--title-color);
    -webkit-font-smoothing: auto;
 }
@@ -67,7 +71,7 @@ body {
    align-items: center;
    padding: 0 2rem;
    border-radius: 0.25rem;
-   font: 500 1rem 'DM Sans', sans-serif;
+   font: 500 1rem var(--body-font);
 }
 
 .button:hover {
@@ -138,11 +142,13 @@ body {
 }
 
 #header.scroll {
-   background: var(--base-color);
-   box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.2);
+   /* background: var(--base-color); */
+   /* box-shadow: 0px 0px 12px rgba(0, 0, 0, 1); */
+   box-shadow: 0px 0px 12px var(--base-color);
+
 }
 
-#header.scroll .logo span {
+/* #header.scroll .logo span {
    color: white;
    transition: color 1s;
 }
@@ -150,12 +156,12 @@ body {
 #header.scroll .icon-menu {
    color: white;
    transition: color 1s;
-}
+} */
 
 /* ======== LOGO ====== */
 
 .logo {
-   font: 700 1.31rem 'Poppins', sans-serif;
+   font: 700 1.5rem var(--title-font);
    color: var(--title-color);
 
 }
@@ -519,7 +525,6 @@ a .up-arrow {
    width: 1rem;
 }
 
-
 /* CF */
 
 footer .cf {
@@ -571,6 +576,59 @@ footer .cf {
  /*========== MEDIA QUERIES ===========*/
  /* extra large devices: 1200 > */
  @media(min-width: 1200px) {
+    /* reusanle class */
+   .container {
+      max-width: 1120px;
+      margin-left: auto;
+      margin-right: auto;
+   }
+
+   .section {
+      padding: 10rem 0;
+   }
+
+   .button {
+      height: 3.125rem;
+   }
+
+   /* navigation */
+   nav .menu {
+      opacity: 1;
+      visibility: visible;
+      top: 0;
+   }
+
+   nav .menu ul {
+      display: flex;
+      gap: 2rem;
+   }
+
+   nav .menu ul li a.title {
+      font: 400 1rem var(--body-font);
+      font-weight: bold;
+   }
+
+   nav .icon-menu {
+      display: none;
+   }
+
+   /* Home */
+   #home .container {
+      grid-auto-flow: column;
+      justify-content: space-between;
+      margin: 0 auto;
+   }
+
+   #home .image {
+      order: 1;
+   }
+
+   #home .text {
+      order: 0;
+      max-width: 24rem;
+      text-align: left;
+   }
+
    main {
       margin-top: calc(var(--header-height));
    }
