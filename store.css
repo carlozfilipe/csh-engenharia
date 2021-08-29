@@ -522,7 +522,7 @@ footer .cf {
   background-position: 0 100%;
   background-repeat: repeat-x;
   background-size: 0.1px 0.1px;
-  color: #000;
+  color: #000000;
   text-decoration: none;
   transition: background-size .2s;
 }
